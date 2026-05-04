@@ -59,7 +59,29 @@ export const useChatStore = create<ChatStore>((set, get) => ({
   }),
 
   initSession: async () => {
-    await get().sendMessage('hi', true);
+    const { businessId, addMessage } = get();
+    set({ loading: true });
+    try {
+      const response = await chatApi.initChat(businessId);
+      set({ 
+        state: response.state,
+        options: response.options || [],
+        card: response.card || null,
+        ui: response.ui || { show_input: true, lock_input: false },
+        loading: false
+      });
+      if (response.reply) {
+        addMessage({
+          id: Date.now().toString(),
+          sender: 'bot',
+          text: response.reply,
+          timestamp: Date.now(),
+        });
+      }
+    } catch (error) {
+      console.error('Failed to init session:', error);
+      set({ loading: false });
+    }
   },
 
   sendMessage: async (text, silent = false) => {

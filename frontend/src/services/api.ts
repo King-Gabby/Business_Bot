@@ -1,7 +1,7 @@
 import axios from 'axios';
 import type { ChatResponse } from '../types/chat';
 
-const API_BASE_URL = `http://${window.location.hostname}:8001`; 
+const API_BASE_URL = import.meta.env.VITE_API_URL || `http://${window.location.hostname}:8001`; 
 
 export const chatApi = {
   sendMessage: async (userId: string, message: string, businessId: string, state: any = {}): Promise<ChatResponse> => {
@@ -11,6 +11,10 @@ export const chatApi = {
       business_id: businessId,
       state: state
     });
+    return response.data;
+  },
+  initChat: async (businessId: string): Promise<ChatResponse> => {
+    const response = await axios.get(`${API_BASE_URL}/init/${businessId}`);
     return response.data;
   },
 };

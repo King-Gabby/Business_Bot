@@ -14,15 +14,22 @@ const ChatPage: React.FC = () => {
     if (businessId) {
       setBusinessId(businessId);
       fetchBusinessInfo(businessId);
+    } else {
+      // If no businessId in URL, fetch info for the default one
+      fetchBusinessInfo('idayat');
     }
   }, [businessId]);
 
   useEffect(() => {
-    if (!initialized.current && messages.length === 0) {
+    // Only init if we haven't already, and we have finished setting the correct businessId in store
+    const currentBusinessId = useChatStore.getState().businessId;
+    const targetBusinessId = businessId || 'idayat';
+    
+    if (!initialized.current && messages.length === 0 && currentBusinessId === targetBusinessId) {
       initialized.current = true;
       initSession();
     }
-  }, []);
+  }, [businessId]);
 
   return (
     <div className="flex flex-col h-screen bg-white">
