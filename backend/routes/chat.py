@@ -61,3 +61,11 @@ async def init_chat(business_id: str):
     # We pass an empty string to trigger greeting/idle state
     response = conversation_engine.handle("anonymous_init", business, "hello")
     return response
+
+@router.get("/business/{business_id}")
+async def get_business(business_id: str):
+    """Returns the business configuration."""
+    business = business_service.get_business(business_id)
+    if not business:
+        raise HTTPException(status_code=404, detail="Business not found")
+    return business
