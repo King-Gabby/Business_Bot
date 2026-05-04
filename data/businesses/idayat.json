@@ -1,0 +1,137 @@
+{
+  "business_id": "idayat",
+  "name": "Idayat Thrifts & Wears",
+  "location": "Ile-Ife, Osun State",
+  "contact": "+234 911 255 6757",
+  "delivery": "Nationwide delivery available (1-5 business days)",
+  "currency": "\u20a6",
+  "categories": [
+    "shoes",
+    "bags",
+    "watches",
+    "jewellery",
+    "wears",
+    "eyewear",
+    "perfumes",
+    "creams"
+  ],
+  "products": {
+    "shoes": {
+      "price": "\u20a625,000",
+      "display_name": "Shoes \ud83d\udc5f",
+      "aliases": [
+        "shoe",
+        "sneakers",
+        "trainers",
+        "footwear",
+        "kicks",
+        "heels",
+        "slippers",
+        "boots",
+        "sandals"
+      ]
+    },
+    "bags": {
+      "price": "\u20a610,000",
+      "display_name": "Bags \ud83d\udecd\ufe0f",
+      "aliases": [
+        "bag",
+        "handbag",
+        "backpack",
+        "tote",
+        "purse",
+        "sidebag",
+        "ladiesbag",
+        "menbag"
+      ]
+    },
+    "watches": {
+      "price": "\u20a630,000",
+      "display_name": "Watches \u231a",
+      "aliases": [
+        "watch",
+        "wristwatch",
+        "timepiece",
+        "rolex",
+        "casio",
+        "applewatch",
+        "samsungwatch"
+      ]
+    },
+    "jewellery": {
+      "price": "\u20a645,000",
+      "display_name": "Jewellery \ud83d\udc8e",
+      "aliases": [
+        "jewellery",
+        "ring",
+        "necklace",
+        "bracelet",
+        "earrings",
+        "gold",
+        "silver"
+      ]
+    },
+    "wears": {
+      "price": "\u20a625,000",
+      "display_name": "Clothes \ud83d\udc55",
+      "aliases": [
+        "wear",
+        "clothe",
+        "cloth",
+        "dress",
+        "shirt",
+        "pant",
+        "skirt",
+        "gown",
+        "suit",
+        "blazer",
+        "jumpsuit",
+        "abaya",
+        "buba",
+        "iro",
+        "fila",
+        "sokoto"
+      ]
+    },
+    "eyewear": {
+      "price": "\u20a65,000",
+      "display_name": "Eyewear \ud83d\udc53",
+      "aliases": [
+        "eyewear",
+        "glasses",
+        "spectacles",
+        "sunglasses",
+        "goggles"
+      ]
+    },
+    "perfumes": {
+      "price": "\u20a66,500",
+      "display_name": "Perfumes \ud83e\uddf4",
+      "aliases": [
+        "perfume",
+        "fragrance",
+        "cologne",
+        "scent",
+        "perfumeoil",
+        "perfumeset",
+        "spray"
+      ]
+    },
+    "creams": {
+      "price": "\u20a65,000",
+      "display_name": "Creams \ud83e\uddf4",
+      "aliases": [
+        "creams",
+        "cream",
+        "body rub",
+        "lotion",
+        "tube"
+      ]
+    },
+    "new_product_1777770139431": {
+      "display_name": "Biscuits",
+      "price": "\u20a6500,000",
+      "aliases": []
+    }
+  }
+}

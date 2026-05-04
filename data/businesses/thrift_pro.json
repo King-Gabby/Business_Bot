@@ -1,0 +1,42 @@
+{
+  "business_id": "thrift_pro",
+  "name": "Rae Glow Skincare",
+  "contact": "+234 800 123 4567",
+  "delivery": "Next-day delivery in Abuja, 3 days nationwide.",
+  "currency": "₦",
+  "categories": [
+    "perfumes",
+    "lipsticks",
+    "lipgloss"
+  ],
+  "products": {
+    "Lipgloss": {
+      "price": "₦2500",
+      "display_name": "lipgloss 💄",
+      "aliases": [
+        "lipgloss",
+        "lip",
+        "glos",
+        "gloss",
+        "glossy",
+        "lip gloss",
+        "lippy",
+        "lipsticks",
+        "lipstick",
+        "liploss",
+        "liplosses"
+      ]
+    },
+    "lipsticks": {
+      "price": "₦3,000",
+      "display_name": "Lipstick 💄 👄",
+      "aliases": [
+        "lip stick",
+        "lipstick",
+        "lipsticks",
+        "stick",
+        "sticks"
+      ]
+    }
+  }
+}

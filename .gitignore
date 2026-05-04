@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+venv/
+bot_env/
+
+# Node
+node_modules/
+dist/
+
+# Mac
+.DS_Store
+
+# Logs
+*.log
+
+# Temp/Backup
+*.save
+*.swp
+*.tmp
+*.bak

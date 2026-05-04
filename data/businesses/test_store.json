@@ -1,0 +1,11 @@
+{
+  "business_id": "test_store",
+  "name": "Test Store",
+  "contact": "+123456",
+  "categories": [
+    "test"
+  ],
+  "currency": "$",
+  "delivery": "Nationwide delivery available.",
+  "products": {}
+}
